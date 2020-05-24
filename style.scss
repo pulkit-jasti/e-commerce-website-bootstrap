@@ -318,45 +318,84 @@ body{
     }
 
     .section-3{
-        height: 100vh;
-        background-color: lightblue;
-        padding: 0 100px;
+        height: 150vh;
+        margin-top: 200px;
+        //background-color: lightblue;
+        overflow: visible;
+        position: relative;
 
         .image-container{
-            position: relative;
+            position: absolute;
             height: 100%;
             width: 100%;
 
             img{
                 position: absolute;
+                box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
             }
 
             .img-1{
                 height: 300px;
+                top: 650px;
+                left: 40%;
+                z-index: 12;
             }
 
             .img-2{
                 width: 400px;
+                left: 80px;
+                top: 100px;
+                z-index: 11;
             }
 
             .img-3{
                 width: 400px;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 200px;
+                z-index: 9;
             }
 
             .img-4{
                 width: 400px;
+                top: 450px;
+                left: 100px;
+                z-index: 13;
             }
 
             .img-5{
                 width: 400px;
+                top: 50px;
+                right: 100px;
+                z-index: 14;
             }
 
             .img-6{
                 height: 400px;
+                right: 200px;
+                z-index: 15;
+                box-shadow: none;
             }
 
             .img-7{
-                width: 400px;
+                width: 350px;
+                top: 550px;
+                right: 0;
+                z-index: 16;
+            }
+        }
+
+        .text-container{
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            p{
+                color: white;
+                font-size: 6rem;
+                letter-spacing: -7px;
+                text-align: center;
+                padding: 150px;
+                line-height: 6rem;
             }
         }
     }
