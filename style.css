@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 .main-page {
   height: 700vh;
   width: 100%;
@@ -24,7 +28,7 @@ a {
 
 .main-page .bck-1 {
   position: absolute;
-  top: 40vh;
+  top: 70vh;
   font-size: 30rem;
   font-weight: 800;
   color: rgba(199, 199, 199, 0.3);
@@ -124,6 +128,9 @@ a {
 }
 
 .main-page .bck-9 {
+  position: absolute;
+  top: 270vh;
+  left: 10vw;
   width: 0px;
   height: 0px;
   border-right: 60px solid transparent;
@@ -137,9 +144,12 @@ a {
 }
 
 .main-page .bck-10 {
-  -webkit-box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 .5em red, 2.5em 1.5em 0 .5em red, -3em -3em 0 0 red, 3em -3em 0 0 red, -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red, 2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red, 3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red, 4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red, -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red, -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
-          box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 .5em red, 2.5em 1.5em 0 .5em red, -3em -3em 0 0 red, 3em -3em 0 0 red, -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red, 2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red, 3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red, 4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red, -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red, -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
-  background: red;
+  position: absolute;
+  top: 10vh;
+  left: 5vw;
+  -webkit-box-shadow: 0 0 0 1em rgba(199, 199, 199, 0.3), 0 1em 0 1em rgba(199, 199, 199, 0.3), -2.5em 1.5em 0 0.5em rgba(199, 199, 199, 0.3), 2.5em 1.5em 0 0.5em rgba(199, 199, 199, 0.3), -3em -3em 0 0 rgba(199, 199, 199, 0.3), 3em -3em 0 0 rgba(199, 199, 199, 0.3), -2em -2em 0 0 rgba(199, 199, 199, 0.3), 2em -2em 0 0 rgba(199, 199, 199, 0.3), -3em -1em 0 0 rgba(199, 199, 199, 0.3), -2em -1em 0 0 rgba(199, 199, 199, 0.3), 2em -1em 0 0 rgba(199, 199, 199, 0.3), 3em -1em 0 0 rgba(199, 199, 199, 0.3), -4em 0 0 0 rgba(199, 199, 199, 0.3), -3em 0 0 0 rgba(199, 199, 199, 0.3), 3em 0 0 0 rgba(199, 199, 199, 0.3), 4em 0 0 0 rgba(199, 199, 199, 0.3), -5em 1em 0 0 rgba(199, 199, 199, 0.3), -4em 1em 0 0 rgba(199, 199, 199, 0.3), 4em 1em 0 0 rgba(199, 199, 199, 0.3), 5em 1em 0 0 rgba(199, 199, 199, 0.3), -5em 2em 0 0 rgba(199, 199, 199, 0.3), 5em 2em 0 0 rgba(199, 199, 199, 0.3), -5em 3em 0 0 rgba(199, 199, 199, 0.3), -3em 3em 0 0 rgba(199, 199, 199, 0.3), 3em 3em 0 0 rgba(199, 199, 199, 0.3), 5em 3em 0 0 rgba(199, 199, 199, 0.3), -2em 4em 0 0 rgba(199, 199, 199, 0.3), -1em 4em 0 0 rgba(199, 199, 199, 0.3), 1em 4em 0 0 rgba(199, 199, 199, 0.3), 2em 4em 0 0 rgba(199, 199, 199, 0.3);
+          box-shadow: 0 0 0 1em rgba(199, 199, 199, 0.3), 0 1em 0 1em rgba(199, 199, 199, 0.3), -2.5em 1.5em 0 0.5em rgba(199, 199, 199, 0.3), 2.5em 1.5em 0 0.5em rgba(199, 199, 199, 0.3), -3em -3em 0 0 rgba(199, 199, 199, 0.3), 3em -3em 0 0 rgba(199, 199, 199, 0.3), -2em -2em 0 0 rgba(199, 199, 199, 0.3), 2em -2em 0 0 rgba(199, 199, 199, 0.3), -3em -1em 0 0 rgba(199, 199, 199, 0.3), -2em -1em 0 0 rgba(199, 199, 199, 0.3), 2em -1em 0 0 rgba(199, 199, 199, 0.3), 3em -1em 0 0 rgba(199, 199, 199, 0.3), -4em 0 0 0 rgba(199, 199, 199, 0.3), -3em 0 0 0 rgba(199, 199, 199, 0.3), 3em 0 0 0 rgba(199, 199, 199, 0.3), 4em 0 0 0 rgba(199, 199, 199, 0.3), -5em 1em 0 0 rgba(199, 199, 199, 0.3), -4em 1em 0 0 rgba(199, 199, 199, 0.3), 4em 1em 0 0 rgba(199, 199, 199, 0.3), 5em 1em 0 0 rgba(199, 199, 199, 0.3), -5em 2em 0 0 rgba(199, 199, 199, 0.3), 5em 2em 0 0 rgba(199, 199, 199, 0.3), -5em 3em 0 0 rgba(199, 199, 199, 0.3), -3em 3em 0 0 rgba(199, 199, 199, 0.3), 3em 3em 0 0 rgba(199, 199, 199, 0.3), 5em 3em 0 0 rgba(199, 199, 199, 0.3), -2em 4em 0 0 rgba(199, 199, 199, 0.3), -1em 4em 0 0 rgba(199, 199, 199, 0.3), 1em 4em 0 0 rgba(199, 199, 199, 0.3), 2em 4em 0 0 rgba(199, 199, 199, 0.3);
+  background: rgba(199, 199, 199, 0.3);
   width: 1em;
   height: 1em;
   overflow: hidden;
@@ -147,24 +157,19 @@ a {
 }
 
 .main-page .bck-11 {
-  margin-left: 100px;
-  background: rgba(199, 199, 199, 0.3);
-  height: 100px;
-  position: relative;
-  width: 20px;
-}
-
-.main-page .bck-11::after {
-  background: rgba(199, 199, 199, 0.3);
-  content: "";
-  height: 20px;
-  left: -40px;
   position: absolute;
-  top: 40px;
-  width: 100px;
+  top: 400vh;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 10rem;
+  color: rgba(199, 199, 199, 0.3);
 }
 
 .main-page .bck-12 {
+  position: absolute;
+  top: 10vh;
+  left: 50vh;
   width: 100px;
   height: 55px;
   background: rgba(199, 199, 199, 0.3);
@@ -195,15 +200,10 @@ a {
   border-top: 25px solid rgba(199, 199, 199, 0.3);
 }
 
-.main-page .bck-13 {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(45deg, #ECEDDC 25%, transparent 25%) 0 -50px, linear-gradient(135deg, #ECEDDC 25%, transparent 25%) 0 -50px, linear-gradient(225deg, #ECEDDC 25%, transparent 25%), linear-gradient(315deg, #ECEDDC 25%, transparent 25%);
-  background-size: 20px 20px;
-  background-color: #EC173A;
-}
-
 .main-page .bck-14 {
+  position: absolute;
+  top: 350vh;
+  left: 10vw;
   height: 500px;
   width: 500px;
   border-radius: 50%;
@@ -212,6 +212,9 @@ a {
 }
 
 .main-page .bck-15 {
+  position: absolute;
+  top: 230vh;
+  right: 30vw;
   height: 300px;
   width: 300px;
   border-radius: 50%;
