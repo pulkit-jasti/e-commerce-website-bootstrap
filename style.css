@@ -16,31 +16,215 @@ a {
 }
 
 .main-page {
-  height: 400vh;
+  height: 700vh;
   width: 100%;
   background-color: #f8f8f8;
   position: relative;
 }
 
 .main-page .bck-1 {
+  position: absolute;
+  top: 40vh;
   font-size: 30rem;
   font-weight: 800;
-  color: rgba(199, 199, 199, 0.2);
+  color: rgba(199, 199, 199, 0.3);
   line-height: 22rem;
 }
 
 .main-page .bck-2 {
-  background-color: rgba(199, 199, 199, 0.4);
+  position: absolute;
+  top: 100vh;
+  right: 20vw;
+  background-color: rgba(199, 199, 199, 0.3);
   width: 200px;
   height: 200px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.main-page .bck-3 svg {
+.main-page .line-container-1 {
+  position: absolute;
+  top: 30vh;
+  right: 10vw;
+}
+
+.main-page .line-container-1 .bck-3 {
+  margin-top: -140px;
+}
+
+.main-page .line-container-1 .bck-3 svg {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   fill: #f8f8f8;
-  stroke: rgba(199, 199, 199, 0.4);
+  stroke: rgba(199, 199, 199, 0.3);
   stroke-width: 4;
+}
+
+.main-page .bck-4 {
+  position: absolute;
+  top: 150vh;
+  left: 30vw;
+  width: 200px;
+  height: 100px;
+  /* as the half of the width */
+  border-top-left-radius: 110px;
+  /* 100px of height + 10px of border */
+  border-top-right-radius: 110px;
+  /* 100px of height + 10px of border */
+  border: 10px solid rgba(199, 199, 199, 0.3);
+  border-bottom: 0;
+}
+
+.main-page .bck-5 {
+  position: absolute;
+  top: 160vh;
+  left: 10vw;
+  width: 200px;
+  height: 100px;
+  /* as the half of the width */
+  border-top-left-radius: 110px;
+  /* 100px of height + 10px of border */
+  border-top-right-radius: 110px;
+  /* 100px of height + 10px of border */
+  border: 10px solid rgba(199, 199, 199, 0);
+  border-bottom: 0;
+  background-color: rgba(199, 199, 199, 0.3);
+}
+
+.main-page .bck-6 {
+  position: absolute;
+  top: 180vh;
+  right: 10vw;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid rgba(199, 199, 199, 0.3);
+}
+
+.main-page .bck-7 {
+  position: absolute;
+  top: 300vh;
+  left: 40vw;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid rgba(199, 199, 199, 0);
+  background-color: rgba(199, 199, 199, 0.3);
+}
+
+.main-page .bck-8 {
+  position: absolute;
+  top: 210vh;
+  left: 10vw;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgba(199, 199, 199, 0.3);
+}
+
+.main-page .bck-9 {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid rgba(199, 199, 199, 0.3);
+  border-left: 60px solid rgba(199, 199, 199, 0.3);
+  border-bottom: 60px solid rgba(199, 199, 199, 0.3);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.main-page .bck-10 {
+  -webkit-box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 .5em red, 2.5em 1.5em 0 .5em red, -3em -3em 0 0 red, 3em -3em 0 0 red, -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red, 2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red, 3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red, 4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red, -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red, -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
+          box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 .5em red, 2.5em 1.5em 0 .5em red, -3em -3em 0 0 red, 3em -3em 0 0 red, -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red, 2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red, 3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red, 4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red, -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red, -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
+  background: red;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+}
+
+.main-page .bck-11 {
+  margin-left: 100px;
+  background: rgba(199, 199, 199, 0.3);
+  height: 100px;
+  position: relative;
+  width: 20px;
+}
+
+.main-page .bck-11::after {
+  background: rgba(199, 199, 199, 0.3);
+  content: "";
+  height: 20px;
+  left: -40px;
+  position: absolute;
+  top: 40px;
+  width: 100px;
+}
+
+.main-page .bck-12 {
+  width: 100px;
+  height: 55px;
+  background: rgba(199, 199, 199, 0.3);
+  position: relative;
+}
+
+.main-page .bck-12::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid rgba(199, 199, 199, 0.3);
+}
+
+.main-page .bck-12::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid rgba(199, 199, 199, 0.3);
+}
+
+.main-page .bck-13 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #ECEDDC 25%, transparent 25%) 0 -50px, linear-gradient(135deg, #ECEDDC 25%, transparent 25%) 0 -50px, linear-gradient(225deg, #ECEDDC 25%, transparent 25%), linear-gradient(315deg, #ECEDDC 25%, transparent 25%);
+  background-size: 20px 20px;
+  background-color: #EC173A;
+}
+
+.main-page .bck-14 {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #f8f8f8 20px, transparent 1%) center, linear-gradient(#f8f8f8 20px, transparent 1%) center, rgba(199, 199, 199, 0.3);
+  background-size: 30px 30px;
+}
+
+.main-page .bck-15 {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.main-page .bck-15 div {
+  height: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: rgba(199, 199, 199, 0.3);
 }
 
 .sample-page {

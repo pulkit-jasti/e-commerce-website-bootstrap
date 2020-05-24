@@ -10,6 +10,8 @@ $gray:#343436;
 $not-black-but-dark:#1c1b20;
 $silver:#f8f8f8;
 
+$alpha:0.3;
+
 
 //GLOBAL STYLES
 *{
@@ -46,30 +48,250 @@ a{text-decoration: none;}
 //MAIN CSS
 .main-page{
     //overflow-x: hidden;
-    height: 400vh;
+    height: 700vh;
     width: 100%;
     background-color: $silver;
     position: relative;
 
     .bck-1{
+        position: absolute;
+        top: 40vh;
         font-size: 30rem;
         font-weight: 800;
-        color: rgba(199, 199, 199, 0.2);
+        color: rgba(199, 199, 199, $alpha);
         line-height: 22rem;
     }
 
     .bck-2{
-        background-color: rgba(199, 199, 199, 0.4);
+        position: absolute;
+        top: 100vh;
+        right: 20vw;
+        background-color: rgba(199, 199, 199, $alpha);
         width: 200px;
         height: 200px;
         transform: rotate(45deg);
     }
 
-    .bck-3 svg{
-            fill:$silver;
-            stroke:rgba(199, 199, 199, 0.4);;
-            stroke-width:4
+    .line-container-1{
+        position: absolute;
+        top: 30vh;
+        right: 10vw;
+
+        .bck-3{
+            margin-top: -140px;
+
+            svg{
+                transform: rotate(-45deg);
+                fill:$silver;
+                stroke:rgba(199, 199, 199, $alpha);
+                stroke-width:4
+            }
+        } 
+    }
+
+    .bck-4{
+        position: absolute;
+        top: 150vh;
+        left: 30vw;
+        width: 200px;
+        height: 100px; /* as the half of the width */
+        border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+        border-top-right-radius: 110px; /* 100px of height + 10px of border */
+        border: 10px solid rgba(199, 199, 199, $alpha);
+        border-bottom: 0;
+    }
+
+    .bck-5{
+        position: absolute;
+        top: 160vh;
+        left: 10vw;
+        width: 200px;
+        height: 100px; /* as the half of the width */
+        border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+        border-top-right-radius: 110px; /* 100px of height + 10px of border */
+        border: 10px solid rgba(199, 199, 199, 0);
+        border-bottom: 0;
+        background-color: rgba(199, 199, 199, $alpha);
+    }
+
+    .bck-6{
+        position: absolute;
+        top: 180vh;
+        right: 10vw;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 10px solid rgba(199, 199, 199, $alpha);
+    }
+
+    .bck-7{
+        position: absolute;
+        top: 300vh;
+        left: 40vw;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 10px solid rgba(199, 199, 199, 0);
+        background-color: rgba(199, 199, 199, $alpha);
+    }
+
+    .bck-8{
+        position: absolute;
+        top: 210vh;
+        left: 10vw;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid rgba(199, 199, 199, $alpha);
+    }
+
+    .bck-9{
+        width: 0px;
+        height: 0px;
+        border-right: 60px solid transparent;
+        border-top: 60px solid rgba(199, 199, 199, $alpha);
+        border-left: 60px solid rgba(199, 199, 199, $alpha);
+        border-bottom: 60px solid rgba(199, 199, 199, $alpha);
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+
+    .bck-10{
+        box-shadow: 0 0 0 1em red,
+        0 1em 0 1em red,
+        -2.5em 1.5em 0 .5em red,
+        2.5em 1.5em 0 .5em red,
+        -3em -3em 0 0 red,
+        3em -3em 0 0 red,
+        -2em -2em 0 0 red,
+        2em -2em 0 0 red,
+        -3em -1em 0 0 red,
+        -2em -1em 0 0 red,
+        2em -1em 0 0 red,
+        3em -1em 0 0 red,
+        -4em 0 0 0 red,
+        -3em 0 0 0 red,
+        3em 0 0 0 red,
+        4em 0 0 0 red,
+        -5em 1em 0 0 red,
+        -4em 1em 0 0 red,
+        4em 1em 0 0 red,
+        5em 1em 0 0 red,
+        -5em 2em 0 0 red,
+        5em 2em 0 0 red,
+        -5em 3em 0 0 red,
+        -3em 3em 0 0 red,
+        3em 3em 0 0 red,
+        5em 3em 0 0 red,
+        -2em 4em 0 0 red,
+        -1em 4em 0 0 red,
+        1em 4em 0 0 red,
+        2em 4em 0 0 red;
+        background: red;
+        width: 1em;
+        height: 1em;
+        overflow: hidden;
+        margin: 50px 0 70px 65px;
+    }
+
+    .bck-11{
+        margin-left: 100px;
+        background: rgba(199, 199, 199, $alpha);
+        height: 100px;
+        position: relative;
+        width: 20px;
+    }
+
+    .bck-11::after{
+        background: rgba(199, 199, 199, $alpha);
+        content: "";
+        height: 20px;
+        left: -40px;
+        position: absolute;
+        top: 40px;
+        width: 100px;
+    }
+
+    .bck-12{
+        width: 100px;
+        height: 55px;
+        background: rgba(199, 199, 199, $alpha);
+        position: relative;
+    }
+
+    .bck-12::before{
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid rgba(199, 199, 199, $alpha);
+    }
+
+    .bck-12::after{
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid rgba(199, 199, 199, $alpha);
+    }
+
+    .bck-13{
+        width:200px;
+        height:200px;
+        background: 
+        linear-gradient(45deg, #ECEDDC 25%, transparent 25%) 0 -50px,
+        linear-gradient(135deg, #ECEDDC 25%, transparent 25%) 0  -50px,
+        linear-gradient(225deg, #ECEDDC 25%, transparent 25%),
+        linear-gradient(315deg, #ECEDDC 25%, transparent 25%);	
+        background-size: 20px 20px;
+        background-color: #EC173A;
+    }
+
+    // Colors
+    $bg-color:$silver;
+    $dot-color: rgba(199, 199, 199, $alpha);
+
+    // Dimensions
+    $dot-size: 10px;
+    $dot-space: 30px;
+
+    .bck-14{
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        background:
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+	    background-size: $dot-space $dot-space;
+    }
+
+    .bck-15{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        transform: rotate(45deg);
+        overflow: hidden;
+        //background-color: lightgreen;
+
+        div{
+            height: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: rgba(199, 199, 199, 0.3);
         }
+    }
 }
 
 .sample-page{
