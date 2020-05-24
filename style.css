@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -7,6 +8,7 @@
   background-repeat: no-repeat;
   z-index: 0;
   list-style: none;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 a {
@@ -14,9 +16,31 @@ a {
 }
 
 .main-page {
-  height: 100vh;
+  height: 400vh;
   width: 100%;
-  background-color: #1c1b20;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.main-page .bck-1 {
+  font-size: 30rem;
+  font-weight: 800;
+  color: rgba(199, 199, 199, 0.2);
+  line-height: 22rem;
+}
+
+.main-page .bck-2 {
+  background-color: rgba(199, 199, 199, 0.4);
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.main-page .bck-3 svg {
+  fill: #f8f8f8;
+  stroke: rgba(199, 199, 199, 0.4);
+  stroke-width: 4;
 }
 
 .sample-page {

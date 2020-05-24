@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+//font-family: 'Archivo Black', sans-serif;
+
 //COLORS
 $dark-red:#de5f5f;
 $bright-red:#ff5851;
@@ -19,6 +22,7 @@ $silver:#f8f8f8;
     
     z-index: 0;
     list-style: none;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 a{text-decoration: none;}
@@ -42,9 +46,30 @@ a{text-decoration: none;}
 //MAIN CSS
 .main-page{
     //overflow-x: hidden;
-    height: 100vh;
+    height: 400vh;
     width: 100%;
-    background-color:$not-black-but-dark;
+    background-color: $silver;
+    position: relative;
+
+    .bck-1{
+        font-size: 30rem;
+        font-weight: 800;
+        color: rgba(199, 199, 199, 0.2);
+        line-height: 22rem;
+    }
+
+    .bck-2{
+        background-color: rgba(199, 199, 199, 0.4);
+        width: 200px;
+        height: 200px;
+        transform: rotate(45deg);
+    }
+
+    .bck-3 svg{
+            fill:$silver;
+            stroke:rgba(199, 199, 199, 0.4);;
+            stroke-width:4
+        }
 }
 
 .sample-page{
