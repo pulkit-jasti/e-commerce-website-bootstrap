@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -8,7 +9,7 @@
   background-repeat: no-repeat;
   z-index: 0;
   list-style: none;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -19,26 +20,33 @@ section {
   overflow-x: hidden;
 }
 
-.main-page {
+body {
+  position: relative !important;
+}
+
+.background {
   height: 700vh;
   width: 100%;
   background-color: #f8f8f8;
-  position: relative;
+  position: absolute;
 }
 
-.main-page .bck-1 {
+.background .bck-1 {
   position: absolute;
-  top: 70vh;
+  top: 60vh;
+  left: 5vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   font-size: 30rem;
   font-weight: 800;
   color: rgba(199, 199, 199, 0.3);
   line-height: 22rem;
 }
 
-.main-page .bck-2 {
+.background .bck-2 {
   position: absolute;
-  top: 100vh;
-  right: 20vw;
+  top: 230vh;
+  right: 30vw;
   background-color: rgba(199, 199, 199, 0.3);
   width: 200px;
   height: 200px;
@@ -46,17 +54,17 @@ section {
           transform: rotate(45deg);
 }
 
-.main-page .line-container-1 {
+.background .line-container-1 {
   position: absolute;
   top: 30vh;
   right: 10vw;
 }
 
-.main-page .line-container-1 .bck-3 {
+.background .line-container-1 .bck-3 {
   margin-top: -140px;
 }
 
-.main-page .line-container-1 .bck-3 svg {
+.background .line-container-1 .bck-3 svg {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   fill: #f8f8f8;
@@ -64,7 +72,7 @@ section {
   stroke-width: 4;
 }
 
-.main-page .bck-4 {
+.background .bck-4 {
   position: absolute;
   top: 150vh;
   left: 30vw;
@@ -79,7 +87,7 @@ section {
   border-bottom: 0;
 }
 
-.main-page .bck-5 {
+.background .bck-5 {
   position: absolute;
   top: 160vh;
   left: 10vw;
@@ -95,7 +103,7 @@ section {
   background-color: rgba(199, 199, 199, 0.3);
 }
 
-.main-page .bck-6 {
+.background .bck-6 {
   position: absolute;
   top: 180vh;
   right: 10vw;
@@ -105,7 +113,7 @@ section {
   border: 10px solid rgba(199, 199, 199, 0.3);
 }
 
-.main-page .bck-7 {
+.background .bck-7 {
   position: absolute;
   top: 300vh;
   left: 40vw;
@@ -116,7 +124,7 @@ section {
   background-color: rgba(199, 199, 199, 0.3);
 }
 
-.main-page .bck-8 {
+.background .bck-8 {
   position: absolute;
   top: 210vh;
   left: 10vw;
@@ -127,7 +135,7 @@ section {
   border-bottom: 100px solid rgba(199, 199, 199, 0.3);
 }
 
-.main-page .bck-9 {
+.background .bck-9 {
   position: absolute;
   top: 270vh;
   left: 10vw;
@@ -143,7 +151,7 @@ section {
   border-bottom-right-radius: 60px;
 }
 
-.main-page .bck-10 {
+.background .bck-10 {
   position: absolute;
   top: 10vh;
   left: 5vw;
@@ -156,7 +164,7 @@ section {
   margin: 50px 0 70px 65px;
 }
 
-.main-page .bck-11 {
+.background .bck-11 {
   position: absolute;
   top: 400vh;
   right: 0;
@@ -166,41 +174,7 @@ section {
   color: rgba(199, 199, 199, 0.3);
 }
 
-.main-page .bck-12 {
-  position: absolute;
-  top: 10vh;
-  left: 50vh;
-  width: 100px;
-  height: 55px;
-  background: rgba(199, 199, 199, 0.3);
-  position: relative;
-}
-
-.main-page .bck-12::before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid rgba(199, 199, 199, 0.3);
-}
-
-.main-page .bck-12::after {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid rgba(199, 199, 199, 0.3);
-}
-
-.main-page .bck-14 {
+.background .bck-14 {
   position: absolute;
   top: 350vh;
   left: 10vw;
@@ -211,10 +185,10 @@ section {
   background-size: 30px 30px;
 }
 
-.main-page .bck-15 {
+.background .bck-15 {
   position: absolute;
-  top: 230vh;
-  right: 30vw;
+  top: 90vh;
+  right: 20vw;
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -223,16 +197,112 @@ section {
   overflow: hidden;
 }
 
-.main-page .bck-15 div {
+.background .bck-15 div {
   height: 10px;
   width: 100%;
   margin-bottom: 20px;
   background-color: rgba(199, 199, 199, 0.3);
 }
 
-.sample-page {
-  height: 100vh;
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 700vh;
   width: 100%;
-  background-color: #343436;
+}
+
+.main .section-1 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .section-1 p {
+  font-size: 13rem;
+  font-weight: 700;
+  color: #343436;
+}
+
+.main .section-2 {
+  height: 100vh;
+  padding: 0 190px 0 150px;
+}
+
+.main .section-2 .container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .section-2 .container .title {
+  line-height: 6rem;
+  color: #343436;
+  font-size: 7rem;
+  letter-spacing: -3px;
+  font-weight: 700;
+}
+
+.main .section-2 .container img {
+  width: 35%;
+}
+
+.main .section-3 {
+  height: 100vh;
+  background-color: lightblue;
+  padding: 0 100px;
+}
+
+.main .section-3 .image-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.main .section-3 .image-container img {
+  position: absolute;
+}
+
+.main .section-3 .image-container .img-1 {
+  height: 300px;
+}
+
+.main .section-3 .image-container .img-2 {
+  width: 400px;
+}
+
+.main .section-3 .image-container .img-3 {
+  width: 400px;
+}
+
+.main .section-3 .image-container .img-4 {
+  width: 400px;
+}
+
+.main .section-3 .image-container .img-5 {
+  width: 400px;
+}
+
+.main .section-3 .image-container .img-6 {
+  height: 400px;
+}
+
+.main .section-3 .image-container .img-7 {
+  width: 400px;
 }
 /*# sourceMappingURL=style.css.map */

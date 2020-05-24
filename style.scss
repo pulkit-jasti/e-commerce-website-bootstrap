@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 //font-family: 'Archivo Black', sans-serif;
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+//font-family: 'Josefin Sans', sans-serif;
+
+
+
 //COLORS
 $dark-red:#de5f5f;
 $bright-red:#ff5851;
@@ -24,13 +29,17 @@ $alpha:0.3;
     
     z-index: 0;
     list-style: none;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 a{text-decoration: none;}
 
 section{
     overflow-x: hidden;
+}
+
+body{
+    position: relative !important;
 }
 
 
@@ -48,18 +57,19 @@ section{
 }
 
 
-
 //MAIN CSS
-.main-page{
+.background{
     //overflow-x: hidden;
     height: 700vh;
     width: 100%;
     background-color: $silver;
-    position: relative;
+    position: absolute;
 
     .bck-1{
         position: absolute;
-        top: 70vh;
+        top: 60vh;
+        left: 5vw;
+        transform: rotate(45deg);
         font-size: 30rem;
         font-weight: 800;
         color: rgba(199, 199, 199, $alpha);
@@ -68,8 +78,8 @@ section{
 
     .bck-2{
         position: absolute;
-        top: 100vh;
-        right: 20vw;
+        top: 230vh;
+        right: 30vw;
         background-color: rgba(199, 199, 199, $alpha);
         width: 200px;
         height: 200px;
@@ -216,43 +226,9 @@ section{
         color: rgba(199, 199, 199, $alpha);
     }
 
-    .bck-12{
-        position: absolute;
-        top: 10vh;
-        left: 50vh;
-        width: 100px;
-        height: 55px;
-        background: rgba(199, 199, 199, $alpha);
-        position: relative;
-    }
-
-    .bck-12::before{
-        content: "";
-        position: absolute;
-        top: -25px;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-bottom: 25px solid rgba(199, 199, 199, $alpha);
-    }
-
-    .bck-12::after{
-        content: "";
-        position: absolute;
-        bottom: -25px;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-top: 25px solid rgba(199, 199, 199, $alpha);
-    }
-
-    .bck-13{
+    //.bck-13{
     
-    }
+    //}
 
     // Colors
     $bg-color:$silver;
@@ -278,8 +254,8 @@ section{
 
     .bck-15{
         position: absolute;
-        top: 230vh;
-        right: 30vw;
+        top: 90vh;
+        right: 20vw;
         height: 300px;
         width: 300px;
         border-radius: 50%;
@@ -296,8 +272,92 @@ section{
     }
 }
 
-.sample-page{
-    height: 100vh;
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 700vh;
     width: 100%;
-    background-color: $gray;
+
+    .section-1{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            font-size: 13rem;
+            font-weight: 700;
+            color: $gray;
+        }
+    }
+
+    .section-2{
+        height: 100vh;
+        padding: 0 190px 0 150px;
+
+        .container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title{
+                line-height: 6rem;
+                color: $gray;
+                font-size: 7rem;
+                letter-spacing: -3px;
+                font-weight: 700;
+            }
+
+            img{
+                width: 35%;
+            }
+        }
+    }
+
+    .section-3{
+        height: 100vh;
+        background-color: lightblue;
+        padding: 0 100px;
+
+        .image-container{
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            img{
+                position: absolute;
+            }
+
+            .img-1{
+                height: 300px;
+            }
+
+            .img-2{
+                width: 400px;
+            }
+
+            .img-3{
+                width: 400px;
+            }
+
+            .img-4{
+                width: 400px;
+            }
+
+            .img-5{
+                width: 400px;
+            }
+
+            .img-6{
+                height: 400px;
+            }
+
+            .img-7{
+                width: 400px;
+            }
+        }
+    }
 }
