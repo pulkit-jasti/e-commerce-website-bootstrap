@@ -25,7 +25,7 @@ body {
 }
 
 .background {
-  height: 700vh;
+  min-height: 700vh;
   width: 100%;
   background-color: #f8f8f8;
   position: absolute;
@@ -205,10 +205,10 @@ body {
 }
 
 .main {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  height: 700vh;
+  min-height: 700vh;
   width: 100%;
 }
 
@@ -263,16 +263,22 @@ body {
 }
 
 .main .section-3 {
-  height: 150vh;
+  min-height: 150vh;
   margin-top: 200px;
   overflow: visible;
   position: relative;
+  /*.sample-box{
+            width: 200px;
+            background-color: lightpink;
+            height: 180vh;
+        }*/
 }
 
 .main .section-3 .image-container {
   position: absolute;
   height: 100%;
   width: 100%;
+  margin-top: 1000px;
 }
 
 .main .section-3 .image-container img {
@@ -296,7 +302,7 @@ body {
 }
 
 .main .section-3 .image-container .img-3 {
-  width: 400px;
+  width: 600px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -335,9 +341,6 @@ body {
 
 .main .section-3 .text-container {
   position: absolute;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .main .section-3 .text-container p {
@@ -347,5 +350,10 @@ body {
   text-align: center;
   padding: 150px;
   line-height: 6rem;
+}
+
+.main .section-4 {
+  height: 150vh;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

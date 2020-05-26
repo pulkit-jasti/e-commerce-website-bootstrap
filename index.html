@@ -68,7 +68,7 @@
         </div>
     </section>
 
-    <section class="main">
+    <section class="main lax" data-lax-translate-y="0 0, 1500 -2300">
         <section class="section-1">
             <p>Hi</p>
         </section>
@@ -80,21 +80,37 @@
         </section>
         <section class="section-3">
             <div class="image-container">
-                <img class="img-1" src="images/mumbai-1.jpg" alt="">
-                <img class="img-2" src="images/mumbai-2.jpg" alt="">
-                <img class="img-3" src="images/mumbai-3.jpg" alt="">
-                <img class="img-4" src="images/mumbai-4.jpg" alt="">
-                <img class="img-5" src="images/mumbai-5.jpg" alt="">
-                <img class="img-6" src="images/mumbai-6.jpg" alt="">
-                <img class="img-7" src="images/mumbai-7.jpg" alt="">
+                <img class="img-1 lax" data-lax-translate-y="0 0, 1000 -1100" src="images/mumbai-1.jpg" alt="">
+                <img class="img-2 lax" data-lax-translate-y="0 0, 1000 -1000" src="images/mumbai-2.jpg" alt="">
+                <img class="img-3 lax" data-lax-translate-y="0 0, 1000 -1500" src="images/mumbai-3.jpg" alt="">
+                <img class="img-4 lax" data-lax-translate-y="0 0, 1000 -1150" src="images/mumbai-4.jpg" alt="">
+                <img class="img-5 lax" data-lax-translate-y="0 0, 1000 -1250" src="images/mumbai-5.jpg" alt="">
+                <img class="img-6 lax" data-lax-translate-y="0 0, 1000 -1060" src="images/mumbai-6.jpg" alt="">
+                <img class="img-7 lax" data-lax-translate-y="0 0, 1000 -900" src="images/mumbai-7.jpg" alt="">
             </div>
             <div class="text-container">
                 <p>An 18 year old chap form Mumbai looking for freelancing opportunites in frontend design</p>
             </div>
+            <div class="sample-box"></div>
         </section>
+
+        <section class="section-4"></section>
     </section>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script>
+        window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
