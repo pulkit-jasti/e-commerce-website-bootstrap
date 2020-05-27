@@ -278,10 +278,11 @@ body{
     left: 0;
     min-height: 700vh;
     width: 100%;
+    overflow-y: hidden;
     //background-color: lightcoral;
 
     .section-1{
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -296,6 +297,7 @@ body{
     .section-2{
         height: 100vh;
         padding: 0 190px 0 150px;
+        //sbackground-color: lightsalmon;
 
         .container{
             height: 100%;
@@ -320,7 +322,7 @@ body{
 
     .section-3{
         min-height: 150vh;
-        margin-top: 200px;
+        margin-top: 600px;
         //background-color: lightblue;
         overflow: visible;
         position: relative;
@@ -340,59 +342,78 @@ body{
 
             .img-1{
                 height: 300px;
-                top: 650px;
-                left: 40%;
+                top: 1600px;
+                left: 70%;
                 z-index: 12;
             }
 
             .img-2{
                 width: 400px;
                 left: 80px;
-                top: 100px;
+                top: 300px;
                 z-index: 11;
             }
 
             .img-3{
-                width: 600px;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 200px;
+                width: 500px;
+                left: 40%;
+                //transform: translateY(-100%);
+                top: 300px;
                 z-index: 9;
             }
 
             .img-4{
-                width: 400px;
-                top: 450px;
-                left: 100px;
-                z-index: 13;
+                width: 500px;
+                top: 330vh;
+                left:3%;
+                z-index: 18;
             }
 
             .img-5{
-                width: 400px;
-                top: 50px;
+                width: 450px;
+                top: 350vh;
                 right: 100px;
                 z-index: 14;
             }
 
             .img-6{
-                height: 400px;
-                right: 200px;
+                height: 470px;
+                top: 80vh;
+                right: 170px;
                 z-index: 15;
                 box-shadow: none;
             }
 
             .img-7{
-                width: 350px;
-                top: 550px;
+                width: 330px;
+                top: 1200px;
                 right: 0;
                 z-index: 16;
+            }
+
+            .img-8{
+                width: 450px;
+                top: 120vh;
+                left: 8%;
+                z-index: 17;
+            }
+
+            .img-9{
+                width: 400px;
+                top: 120vh;
+            }
+
+            .img-10{
+                width: 500px;
+                top: 40vh;
+                right: 0;
             }
         }
 
         .text-container{
             position: absolute;
-            //top: 45%;
-            //transform: translateY(-50%);
+            top: 45%;
+            transform: translateY(-50%);
             p{
                 color: white;
                 font-size: 6rem;
@@ -400,6 +421,7 @@ body{
                 text-align: center;
                 padding: 150px;
                 line-height: 6rem;
+                font-weight: 600;
             }
         }
 

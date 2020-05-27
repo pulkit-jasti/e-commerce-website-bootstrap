@@ -210,10 +210,11 @@ body {
   left: 0;
   min-height: 700vh;
   width: 100%;
+  overflow-y: hidden;
 }
 
 .main .section-1 {
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +265,7 @@ body {
 
 .main .section-3 {
   min-height: 150vh;
-  margin-top: 200px;
+  margin-top: 600px;
   overflow: visible;
   position: relative;
   /*.sample-box{
@@ -289,58 +290,78 @@ body {
 
 .main .section-3 .image-container .img-1 {
   height: 300px;
-  top: 650px;
-  left: 40%;
+  top: 1600px;
+  left: 70%;
   z-index: 12;
 }
 
 .main .section-3 .image-container .img-2 {
   width: 400px;
   left: 80px;
-  top: 100px;
+  top: 300px;
   z-index: 11;
 }
 
 .main .section-3 .image-container .img-3 {
-  width: 600px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 200px;
+  width: 500px;
+  left: 40%;
+  top: 300px;
   z-index: 9;
 }
 
 .main .section-3 .image-container .img-4 {
-  width: 400px;
-  top: 450px;
-  left: 100px;
-  z-index: 13;
+  width: 500px;
+  top: 330vh;
+  left: 3%;
+  z-index: 18;
 }
 
 .main .section-3 .image-container .img-5 {
-  width: 400px;
-  top: 50px;
+  width: 450px;
+  top: 350vh;
   right: 100px;
   z-index: 14;
 }
 
 .main .section-3 .image-container .img-6 {
-  height: 400px;
-  right: 200px;
+  height: 470px;
+  top: 80vh;
+  right: 170px;
   z-index: 15;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .main .section-3 .image-container .img-7 {
-  width: 350px;
-  top: 550px;
+  width: 330px;
+  top: 1200px;
   right: 0;
   z-index: 16;
 }
 
+.main .section-3 .image-container .img-8 {
+  width: 450px;
+  top: 120vh;
+  left: 8%;
+  z-index: 17;
+}
+
+.main .section-3 .image-container .img-9 {
+  width: 400px;
+  top: 120vh;
+}
+
+.main .section-3 .image-container .img-10 {
+  width: 500px;
+  top: 40vh;
+  right: 0;
+}
+
 .main .section-3 .text-container {
   position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .main .section-3 .text-container p {
@@ -350,6 +371,7 @@ body {
   text-align: center;
   padding: 150px;
   line-height: 6rem;
+  font-weight: 600;
 }
 
 .main .section-4 {
